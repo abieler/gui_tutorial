@@ -8,19 +8,19 @@ import ui_example_1
 
 
 class Window(QTG.QWidget,ui_example_1.Ui_Form):
-	def __init__(self, parent = None): 		
-		super(Window, self).__init__(parent) 		
-		self.setupUi(self)
+    def __init__(self, parent = None): 		
+        super(Window, self).__init__(parent) 		
+        self.setupUi(self)
 
-		self.connect(self.pushButton_start, QTC.SIGNAL("clicked()"), \
-		self.myfunc)
-	
-	def myfunc(self):
-		yourName = self.lineEdit_name.text()
-		message = 'Hello,%s.' %yourName
-		
-		self.label_message.setText(message)
-	
+        self.connect(self.pushButton_start, QTC.SIGNAL("clicked()"), \
+        self.myfunc)
+
+    def myfunc(self):
+        yourName = self.lineEdit_name.text()
+        message = 'Hello,%s.' %yourName
+
+        self.label_message.setText(message)
+
 	
 app = QTG.QApplication(sys.argv)
 window = Window()
