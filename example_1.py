@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Filename: example_1.py
+#Filename: example_1.py
 
 import sys
 import PyQt4.QtCore as QTC
